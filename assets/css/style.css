@@ -325,7 +325,7 @@ nav {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/asset-3-v2.png") top right;
+  background: url("../img/TSL_R2_HeroBuildings_992x620.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -468,8 +468,8 @@ text-align: center;
     padding-right: 10%;
   }
   #hero { 
-    background: url("../img/mobile-hero.png") top right;
-    background-size: contain !important;
+    background: url("../img/TSL_R2_HeroBuildings_992x620.jpg") center center no-repeat;
+    background-size: cover !important;
     background-repeat: no-repeat;
 
   }
