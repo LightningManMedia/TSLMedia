@@ -846,33 +846,7 @@ Animation
 .title-02 h3 { 
   padding-left: 4%;
 }
-@media (max-width: 575px) {
 
-  .vision  {
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    height: 780px;
-
-  }
-  .vision .title-01 { 
-    position: absolute;
-    margin: 0;
-    top: 43%;
-  }
-
-.vision .title-02 { 
-
- padding-top: 0;
- position: absolute;
- top: 57%;
- left: 20%;
-text-align: center;
-}
-
-
-
-}
 
 
 @media (min-width: 1024px) {
@@ -890,8 +864,39 @@ text-align: center;
   left: 0;
   right: 0;
   padding: 0;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media (max-width: 575px) {
+
+  .vision  {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 780px;
+
+  }
+  .vision .title-01 { 
+    position: absolute;
+    margin: 0;
+    top: 43%;
+  }
+  .vision-bg { 
+    top: 28%;
+  }
+
+.vision .title-02 { 
+
+ padding-top: 0;
+ position: absolute;
+ top: 57%;
+ left: 20%;
+text-align: center;
+}
+
+
+
 }
 
 /*--------------------------------------------------------------
@@ -999,24 +1004,50 @@ background-color: transparent;
   background-size: cover;
   position: relative;
   min-height: 550px;
+  background: url("../img/TSL_R2_GraphicInsight_1200.jpg") center center no-repeat;
 }
 
-.invest h1 { 
+/* .invest h1 { 
   font-size: 6vw;
-}
+} */
 
-.invest h3 { 
+/* .invest h3 { 
   font-size: 3vw;
-}
-@media (max-width: 1024px) {
+} */
+/* @media (max-width: 1024px) {
   .invest h1 { 
     font-size: 9vw;
 
   }
-}
+} */
+
+
 
 .invest-bg  {
-  background: url("../img/TSL_R2_GraphicInsight_1200.jpg") center center no-repeat;
-  background-size: contain;
+  /* background: url("../img/TSL_R2_TimesSq_1200.jpg") center center no-repeat; */
+  background-size: cover;
+  top: 28%;
+  bottom: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
+@media (max-width: 575px) {
+
+  .invest  {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 780px;
+
+  }
+  .invest-bg  {
+    top: 10%;
+    bottom: 40%;
+
+  }
+}
