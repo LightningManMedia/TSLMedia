@@ -8,8 +8,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: LibreFranklin_bold;
+  src: url(../fonts/LibreFranklin-BoldItalic.ttf);
+}
+@font-face {
+  font-family: LibreFranklin;
+  src: url(../fonts/LibreFranklin-Regular.ttf);
+}
+@font-face {
+  font-family: LibreFranklin-Medium;
+  src: url(../fonts/LibreFranklin-Medium.ttf);
+}
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'LibreFranklin', sans-serif;
     color: white;
     background-color: #050e18;
 }
@@ -18,18 +30,24 @@ a {
   color: #c8c072;
 }
 
+p { 
+  font-size: 20px;
+}
 a:hover {
   color: #4084d0;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'LibreFranklin_bold', sans-serif;
   text-transform: uppercase;
   color: white;
   font-weight: 900;
 }
-
+.logo { 
+  font-family: 'LibreFranklin-Medium', sans-serif;
+  letter-spacing: 3px;
+}
 h3 { 
   font-weight: 700;
 }
@@ -125,7 +143,7 @@ nav {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 15px;
-  font-family: "Rubik", sans-serif;
+  font-family: "LibreFranklin", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -330,21 +348,6 @@ nav {
   position: relative;
 }
 
-#hero .title-02 h3{ 
-
-    padding-left: 3%;
-
-}
-#hero .title-02 { 
-  position: absolute;
-  right: 5%;
-  top: 60%;
-}
-
-
-.title-01 h3, .title-02 h3 { 
-  margin-bottom: -0.2em;
-}
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.25);
@@ -373,7 +376,7 @@ nav {
 
 }
 #hero h1 { 
-  font-size: 8vw;
+  font-size: 60px;
 }
 
 #hero h3 { 
@@ -381,7 +384,7 @@ nav {
 }
 @media (max-width: 1024px) {
   #hero h1 { 
-    font-size: 9vw;
+    font-size: 8vw;
 
   }
 }
@@ -810,7 +813,6 @@ Animation
 --------------------------------------------------------------*/
 .vision {
   padding: 0; /*  padding: 80px 0;*/
-  background: url("../img/asset-4-v1.png") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -829,27 +831,6 @@ Animation
     font-size: 9vw;
 
   }
-}
-.vision .title-01 { 
-  position: absolute;
-  padding: 0;
-  left: 2%;
-  top: 30%;
-}
-.vision .title-02 { 
-  position: absolute;
-  left: 60%;
-  top: 55%;
-  padding: 0;
-}
-.vision::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(14, 16, 17, 0.1);
 }
 
 .vision .section-header {
@@ -892,15 +873,7 @@ text-align: center;
   padding-left: 10px;
   padding-right: 10px;
 }
-.vision .title-02 h3 { 
-  padding-right: 35% !important;
-  padding-left: 0 !important;
-  position: relative;
-}
-.vision .title-01 h3 { 
-  padding-left: 4%;
-  position: relative;
-}
+
 
 }
 
@@ -919,7 +892,7 @@ text-align: center;
 }
 
 .vision-bg  {
-  background: url("../img/TSL_R2_TimesSq_1200.jpg") top center no-repeat;
+  background: url("../img/TSL_R2_TimesSq_1200.jpg") center center no-repeat;
   background-size: contain;
 }
 
@@ -955,7 +928,6 @@ background-color: transparent;
 }
 .row-about { 
  padding: 6%;
-  background: url("../img/MMAGlobal_R2_Sec3_FAC_992x272.jpg") top center no-repeat;
   background-size: cover;
 }
 @media (max-width: 992px) { 
@@ -966,7 +938,6 @@ background-color: transparent;
 
 @media (max-width: 768px) { 
   .row-about { 
-    background: url("../img/MMAGlobal_R2_Sec3_FAC2_540x584.jpg") top center no-repeat;
     background-size: cover;
   }
   .boxes { 
@@ -979,7 +950,6 @@ background-color: transparent;
 # About
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/MMAGlobal_R2_Forward_992x244.jpg") top center no-repeat;
   background-size: contain;
   color: #fff;
   font-size: 14px;
@@ -987,12 +957,7 @@ background-color: transparent;
   padding: 0 !important;
   position: relative;
 }
-@media (max-width: 992px) {
-  #about {
-    background: url("../img/MMAGlobal_R2_Forward_768x244.jpg") top center no-repeat;
-    background-size: contain;
-  }
-}
+
 @media (max-width: 768px) {
   #about {
 
@@ -1000,13 +965,6 @@ background-color: transparent;
   }
 }
 
-@media (max-width: 575px) {
-  #about { 
-    background: url("../img/MMAGlobal_R2_Forward_576x271.jpg") top center no-repeat;
-
-  background-size: cover;
-  }
-}
 
 .about .text-container-row { 
   padding: 5%;
@@ -1020,7 +978,6 @@ background-color: transparent;
 --------------------------------------------------------------*/
 .invest {
   padding: 0; /*  padding: 80px 0;*/
-  background: url("../img/asset-4-v1.png") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1042,89 +999,7 @@ background-color: transparent;
 }
 
 .invest-bg  {
-  background: url("../img/TSL_R2_GraphicInsight_1200.jpg") top center no-repeat;
+  background: url("../img/TSL_R2_GraphicInsight_1200.jpg") center center no-repeat;
   background-size: contain;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  background: url("../img/asset-5.png") top center no-repeat;
-  background-size: cover;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 80px 0;
-  position: relative;
-}
-
-#footer::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
- /* background: rgba(0, 0, 0, 0.6);*/
-}
-
-#footer .container {
-  position: relative;
-}
-
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  position: relative;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-.invest-description-1 { 
-  font-size: 18px;
-}
-.invest-description-2 { 
-  font-size: 13px;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-
-}
-@media (max-width: 575px) {
-  .invest-description-2 { 
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-}
-#footer p {
-
-  padding: 0;
-  /*margin: 0 0 40px 0;*/
-}
-
-#footer .invest-btn {
-  margin: 0 0 40px 0;
-}
-
-#footer .invest-btn button {
-  background: white;
-  color: #0d3562;
-  border: none;
-  text-align: center;
-  transition: 0.3s;
-  padding: 15px 45px 15px 45px;
-}
-
-#footer .invest-btn button:hover {
-  background: #0d3562;
-  color: #fff;
-}
-
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
-
-#footer .credits {
-  font-size: 13px;
-}
