@@ -817,21 +817,24 @@ Animation
   background-size: cover;
   position: relative;
   min-height: 550px;
+  background: url("../img/TSL_R2_TimesSq_1200.jpg") center center no-repeat;
+
 }
 
-.vision h1 { 
+/* .vision h1 { 
   font-size: 6vw;
 }
 
 .vision h3 { 
   font-size: 3vw;
-}
+} */
 @media (max-width: 1024px) {
   .vision h1 { 
     font-size: 9vw;
 
   }
 }
+
 
 .vision .section-header {
   margin-bottom: 40px;
@@ -846,11 +849,11 @@ Animation
 @media (max-width: 575px) {
 
   .vision  {
-    background: url("../img/khabib-mobile.png") no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
     height: 780px;
+
   }
   .vision .title-01 { 
     position: absolute;
@@ -866,24 +869,11 @@ Animation
  left: 20%;
 text-align: center;
 }
-.vision p { 
-  position: absolute;
-  bottom: -18px;
-  left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
 
 
 }
 
-@media (max-width: 400px) {
-  .vision  {
-    background-size: contain;
-
-  }
-
-}
 
 @media (min-width: 1024px) {
   .vision {
@@ -892,8 +882,16 @@ text-align: center;
 }
 
 .vision-bg  {
-  background: url("../img/TSL_R2_TimesSq_1200.jpg") center center no-repeat;
+  /* background: url("../img/TSL_R2_TimesSq_1200.jpg") center center no-repeat; */
   background-size: contain;
+  top: 40%;
+  bottom: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*--------------------------------------------------------------
@@ -951,6 +949,8 @@ background-color: transparent;
 --------------------------------------------------------------*/
 #about {
   background-size: contain;
+  background: url("../img/TSL_R2_Waves_1200x244.jpg") top center no-repeat;
+
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -958,19 +958,36 @@ background-color: transparent;
   position: relative;
 }
 
-@media (max-width: 768px) {
-  #about {
-
-  background-size: cover;
-  }
-}
 
 
 .about .text-container-row { 
   padding: 5%;
-  background: url("../img/TSL_R2_Waves_1200x244.jpg") top center no-repeat;
-  background-size: contain;
+
 }
+
+@media(max-width: 992px) { 
+  #about {
+
+    background: url("../img/TSL_R2_Waves_992x244.jpg") top center no-repeat;
+  }
+
+/* .about .text-container-row { 
+  background: url("../img/TSL_R2_Waves_992x244.jpg") top center no-repeat;
+  background-size: contain;
+} */
+  
+}
+
+@media (max-width: 768px) {
+  #about {
+
+  background-size: cover;
+  background: url("../img/TSL_R2_Waves_768x244.jpg") top center no-repeat;
+
+  }
+}
+
+
 
 
 /*--------------------------------------------------------------
