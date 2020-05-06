@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #3677c1;
+  color: #c8c072;
 }
 
 a:hover {
@@ -559,8 +559,8 @@ section {
   }
 }
 
-.hideme { 
-  opacity: 0;
+.text-container-row { 
+  padding: 20%;
 }
 /*------
 Animation
@@ -809,7 +809,7 @@ Animation
 # vision
 --------------------------------------------------------------*/
 .vision {
-  padding: 80px 0;
+  padding: 0; /*  padding: 80px 0;*/
   background: url("../img/asset-4-v1.png") no-repeat;
   background-position: center center;
   background-size: cover;
@@ -817,9 +817,6 @@ Animation
   min-height: 550px;
 }
 
-.vision .text-container-row { 
-  padding: 20%;
-}
 .vision h1 { 
   font-size: 6vw;
 }
@@ -921,6 +918,10 @@ text-align: center;
   }
 }
 
+.vision-bg  {
+  background: url("../img/TSL_R2_TimesSq_1200.jpg") top center no-repeat;
+  background-size: contain;
+}
 
 /*--------------------------------------------------------------
 # About Part II
@@ -1007,7 +1008,7 @@ background-color: transparent;
   }
 }
 
-.text-container-row { 
+.about .text-container-row { 
   padding: 5%;
   background: url("../img/TSL_R2_Waves_1200x244.jpg") top center no-repeat;
   background-size: contain;
@@ -1018,7 +1019,7 @@ background-color: transparent;
 # invest
 --------------------------------------------------------------*/
 .invest {
-  padding: 80px 0;
+  padding: 0; /*  padding: 80px 0;*/
   background: url("../img/asset-4-v1.png") no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1026,9 +1027,6 @@ background-color: transparent;
   min-height: 550px;
 }
 
-.invest .text-container-row { 
-  padding: 20%;
-}
 .invest h1 { 
   font-size: 6vw;
 }
@@ -1041,6 +1039,11 @@ background-color: transparent;
     font-size: 9vw;
 
   }
+}
+
+.invest-bg  {
+  background: url("../img/TSL_R2_GraphicInsight_1200.jpg") top center no-repeat;
+  background-size: contain;
 }
 
 /*--------------------------------------------------------------
