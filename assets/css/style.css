@@ -915,8 +915,15 @@ background-color: transparent;
 }
 .box img { 
   width: 100%;
-}
+  opacity: 1.0;
+  transition: all .3s linear;
 
+}
+.box img:hover { 
+ opacity: 0.6;
+  
+
+}
 .box h2 { 
   color: #13314c;
 }
