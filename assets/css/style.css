@@ -808,6 +808,7 @@ Animation
   background-color: #ffb727;
 }
 
+
 /*--------------------------------------------------------------
 # vision
 --------------------------------------------------------------*/
@@ -969,7 +970,16 @@ background-color: transparent;
   padding: 5%;
 
 }
-
+@media (min-width: 768px) {
+  .about-bg { 
+    padding-top: 9% !important;
+  }
+  }
+@media (max-width: 767px) { 
+  .about-bg { 
+    padding-top: 12% !important;
+  }
+}
 @media(max-width: 992px) { 
   #about {
 
@@ -989,6 +999,10 @@ background-color: transparent;
   background-size: cover;
   background: url("../img/TSL_R2_Waves_768x244.jpg") top center no-repeat;
 
+  }
+  #about .about-description {
+
+    padding-top: 10%;
   }
 }
 
